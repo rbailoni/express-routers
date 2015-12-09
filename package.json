@@ -10,7 +10,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.10",
+    "multer": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",

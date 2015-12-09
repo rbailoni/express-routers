@@ -1,8 +1,15 @@
 'use strict';
 
-var Router = require('express').Router;
-var router = new Router();
-var controllers = require('../controllers');
+let Router = require('express').Router;
+let router = new Router();
+let controllers = require('../controllers');
+let bodyParser = require('body-parser');
+let multer = require('multer')();
+
+router.use(bodyParser.urlencoded({extended:false}));
+router.use(bodyParser.json());
+router.use(multer.array());
+
 
 
 router
